@@ -1,0 +1,92 @@
+::placeholder {
+    opacity : 0.7;
+}
+.navbar {
+    display : flex;
+}
+.navbar_logo {
+    display : flex;
+    justify-content: space-between;
+    width : 100px;
+}
+img.A {
+    border-radius : 50%;
+}
+.profile {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display : flex;
+    width : 100%;
+    margin : 0 auto;
+    /* flex-direction: column; */
+}
+.profile_picture {
+    text-align: center;
+    align-items: center;
+} 
+.profile_nikname {
+    display : flex;
+    justify-content: space-between;
+    margin-top : 40px;
+}
+.profile_in {
+    justify-content: center;
+    align-items: center;
+    margin : 20px;
+    text-align: left;
+    width : 300px;
+}
+.profile_inf {
+    display : flex;
+    flex-direction: column;
+    margin: auto;
+}
+.profileinf {
+    display : flex;
+    font-size: 15px;
+    justify-content: space-between;
+    margin-top : 20px;
+}
+.profile_firstname {
+    text-align: left;
+    margin-top: 20px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    margin: 30px 400px 30px 50px;
+    border-color: black;
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.second {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.iconbox {
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    width : 100%;
+    border-top-style: solid;
+    border-color: gray;
+}
+.posts_in {
+    margin-top : 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+img.item {
+    margin : 20px;
+}
