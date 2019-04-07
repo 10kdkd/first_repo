@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>입력받는 텍스트는 {{wordcount}} 단어 입니다.</h1>
+    <a href="{% url 'home' %}">다시하기</a>    
+    <h1>입력받은 텍스트</h1>
+    <div>
+        <h2>{{text}}</h2>
+    </div>
+    <h1>단어 카운트</h1>
+    {% for key, value in each_word_count.items %}
+    <h3>{{key}} : {{value}}</h3>
+    {% endfor%}
+</body>
+</html>
