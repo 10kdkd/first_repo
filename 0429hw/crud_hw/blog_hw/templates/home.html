@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel = 'stylesheet' type='text/css' href = "{% static 'home.css' %}?v=0.5">
+</head>
+<body style = 'background-color : lightyellow'>
+    <h1 class = 'font_color'>동제의 과제블로그</h1>
+    <h2>책 목록</h2>
+        <div class = 'textbox'>
+        {% for post in posts %}
+        <div class = 'text'>
+        <li><a href="{% url 'detail' post.pk %}">{{post.title}}</a><br><h6>평점 : {{post.grade}},   가격 : {{post.price}}</h6></li>
+        </div>
+        {% endfor %}
+        </div>
+    <a href="{% url 'new' %}"><button class="w3-button w3-blue">글쓰기</button></a>
+</body>
+</html>
